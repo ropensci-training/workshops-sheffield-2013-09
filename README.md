@@ -1,5 +1,6 @@
 
-# rOpenSci Sheffield Workshop
+[![](ropensci_logo.png)](http://ropensci.org/)
+# Sheffield Workshop
 ## September 9th, 14:30 - 17:30 
 ## Location TBD.
 
