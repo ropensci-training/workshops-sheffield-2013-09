@@ -51,15 +51,18 @@ fs_author_search("Boettiger")
 
 ```coffee
 ## First create an identifier on figshare
-id <- fs_create("TGAG test dataset", "File contains made up data", "dataset")
-data(mtcars)
-write.csv(mtcars, "mtcars.csv")
-fs_upload(id, "mtcars.csv")
+id <- fs_create("Sheffield test dataset", "File contains made up data", "dataset")
+data(iris)
+write.csv(iris, "iris.csv")
+fs_upload(id, "iris.csv")
 fs_add_tags(id, "demo")
 fs_category_list()
 # finally we make the data public
 fs_make_public(id)
 ```
+
+Now we can view the dataset on the [profile page](http://figshare.com/authors/ROpenSci%20Demo/453074) for this demo account we're using.
+
 
 ```coffee
 Do all of the above in a single function call
@@ -111,10 +114,9 @@ Let's download that one with:
 
 ```coffee
 # Using the id: 41e3440
-file <- fs_download(472564, urls_only=T)
+file <- fs_download(472564, urls_only = TRUE)
 library(gdata)
 df <- read.xls(file, sheet=1, header=T)
-
 ```
 
 
