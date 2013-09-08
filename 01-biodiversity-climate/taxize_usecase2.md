@@ -3,18 +3,13 @@
 There is only functionality for plants right now in taxize. We hope to add more taxan groups soon.
 
 
+**Load libraries**
 
-
-### Load libraries
-
-
-```r
+```coffee
 library(taxize)
 ```
 
-
-
-```r
+```coffee
 splist <- c("Helianthus annuus", "Pinus contorta", "Collomia grandiflora", "Abies magnifica", 
     "Rosa californica", "Datura wrightii", "Mimulus bicolor", "Nicotiana glauca", 
     "Madia sativa", "Bartlettia scaposa")
@@ -26,17 +21,17 @@ splist <- c("Helianthus annuus", "Pinus contorta", "Collomia grandiflora", "Abie
 ### Fetch phylogeny from phylomatic 
 
 
-```r
+```coffee
 phylogeny <- phylomatic_tree(taxa = splist, taxnames = TRUE, get = "POST", informat = "newick", 
     method = "phylomatic", storedtree = "R20120829", taxaformat = "slashpath", 
-    outformat = "newick", clean = "true", parallel = TRUE)
+    outformat = "newick", clean = "true", parallel = FALSE)
 ```
 
 
 ### Format tip-labels 
 
 
-```r
+```coffee
 phylogeny$tip.label <- capwords(phylogeny$tip.label, onlyfirst = TRUE)
 ```
 
@@ -44,9 +39,11 @@ phylogeny$tip.label <- capwords(phylogeny$tip.label, onlyfirst = TRUE)
 ### Plot phylogeny 
 
 
-```r
+```coffee
 plot(phylogeny)
 ```
 
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-21.png) ![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-22.png) 
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-21.png) 
+
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-22.png) 
 
