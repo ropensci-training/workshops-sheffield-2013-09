@@ -23,7 +23,7 @@ options(FigshareSecret = "xxxxxxxxxxx")
 options(FigshareToken = "xxxxxxxxxxx")
 options(FigshareTokenSecret = "xxxxxxxxxxx")
 ```
-For today's demo I have already loaded these keys into your `.rprofile`. You can look at your keys with the `getOption()` function.
+For today's demo I have already loaded these keys into your [`.rprofile`](https://github.com/ropensci/workshops-sheffield-2013-09/blob/master/02-reproducible-workflows/.rprofile_example). You can look at your keys with the `getOption()` function.
 
 for example:
 
