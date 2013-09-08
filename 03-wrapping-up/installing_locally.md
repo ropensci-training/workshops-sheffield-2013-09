@@ -22,8 +22,8 @@ Next install:
 
 ```coffee
 install.packages("ggplot2", dependencies = TRUE)
-install.packages("plyr")
-install.packages("reshape2")
+install.packages("dismo")
+install.packages("maptools")
 install.packages("knitr") # for reproducible documents
 install.packages("rgbif")
 install.packages("rplos")
