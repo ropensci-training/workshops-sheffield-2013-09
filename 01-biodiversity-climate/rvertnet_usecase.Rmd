@@ -15,12 +15,12 @@ splist <- splist <- c("Accipiter erythronemius","Junco hyemalis","Aix sponsa","H
 
 ### Search for occurrences in VertNet
 
-```{r splist, cache=TRUE}
+```{r splist2, cache=TRUE}
 out <- lapply(splist, function(x) vertoccurrence(t=x, grp="bird", num=500))
 ```
 
 ### Plot data
 
-```{r splist, cache=TRUE}
+```{r splist3, cache=TRUE}
 vertmap(out)
 ```
