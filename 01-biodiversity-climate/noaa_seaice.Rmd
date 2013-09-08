@@ -19,8 +19,8 @@ urls <- seaiceeurls(mo='Apr', pole='N')[1:12]
 ### Download sea ice data
 
 ```{r getdata, warning=FALSE, comment=NA, message=FALSE, cache=TRUE}
-registerDoMC(cores=4)
-out <- llply(urls, noaa_seaice, storepath="~/seaicedata", .parallel=TRUE)
+registerDoMC(cores = 4)
+out <- llply(urls, noaa_seaice, storepath="~/", .parallel=FALSE)
 names(out) <- seq(1979,1990,1)
 df <- ldply(out)
 ```
@@ -31,5 +31,5 @@ df <- ldply(out)
 ggplot(df, aes(long, lat, group=group)) + 
   geom_polygon(fill="steelblue") +
   theme_ice() +
-  facet_wrap(~ .id)
+  facet_wrap(~ id)
 ```
