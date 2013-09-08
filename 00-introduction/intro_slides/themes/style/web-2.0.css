@@ -35,7 +35,7 @@
     -ms-transform: none;
     -o-transform: none;
     transform: none;
-    font-family: "ProximaNovaRegular", Georgia, sans-serif;
+    font-family: "proxima-nova", Georgia, sans-serif;
     color: #064865;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
   }
