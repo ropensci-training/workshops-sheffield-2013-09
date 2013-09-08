@@ -14,7 +14,7 @@ You'll be able to copy-paste all of the code provided here directly into RStudio
 
 |Topic|Time|
 |---------------|-------|
-|**Welcome and introduction**| 2:30 - 3 |
+|**Introduction to rOpenSci** [slides] | 2:30 - 3 |
 |**rOpenSci demos 1** *Biodiversity records, taxonomic name resolution, climate mapping*| 3:00 - 4:00 |
 |**Break**| 4:00 - 4:15 |
 |**rOpenSci demos 2** *Reproducible workflows, sharing and reusing data and analyses*| 4:15 - 5:00 |

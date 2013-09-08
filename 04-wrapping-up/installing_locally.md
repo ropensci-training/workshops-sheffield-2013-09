@@ -36,6 +36,6 @@ install_github("rWBclimate",  "ropensci")
 install_github("reml",  "ropensci")
 ```
 
-*Note: REML currently has dependencies that are not on CRAN. See [this [page]() for instructions on how to install them from source. Once a stable version is ready, all dependencies will also be available and setup will be a lot simpler.*
+*Note: REML currently has dependencies that are not on CRAN. See [this page]() for instructions on how to install them from source. Once a stable version is ready, all dependencies will also be available and setup will be a lot simpler.*
 
 
