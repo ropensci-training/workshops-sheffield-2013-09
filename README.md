@@ -8,17 +8,19 @@ Welcome to the GitHub repository for the Sheffield workshop. All the code and pa
 
 You'll be able to copy-paste all of the code provided here directly into RStudio.
 
+* Login at [**rstudio.ropensci.org**](http://rstudio.ropensci.org/)
+
 --- 
 
 ## Schedule 
 
 |Topic|Time|
 |---------------|-------|
-|**Introduction to rOpenSci** [slides 00](http://ropensci.github.io/workshops-sheffield-2013-09/00-introduction/intro_slides/index.html) | 2:30 - 3 |
-|**rOpenSci demos 1** *Biodiversity records, taxonomic name resolution, climate mapping* [slides 01](http://ropensci.github.io/workshops-sheffield-2013-09/00-introduction/intro_slides/index.html) | 3:00 - 4:00 |
+|**Introduction to rOpenSci** [slides](http://ropensci.github.io/workshops-sheffield-2013-09/00-introduction/intro_slides/index.html) | 2:30 - 3 |
+|**rOpenSci demos 1** *Biodiversity records, taxonomic name resolution, climate mapping* [slides](http://ropensci.github.io/workshops-sheffield-2013-09/00-introduction/intro_slides/index.html) | 3:00 - 4:00 |
 |**Break**| 4:00 - 4:15 |
-|**rOpenSci demos 2** *Reproducible workflows, sharing and reusing data and analyses* [slides 02](http://ropensci.github.io/workshops-sheffield-2013-09/00-introduction/intro_slides/index.html) | 4:15 - 5:00 |
-|**Wrap up and discussion** [slides 03](http://ropensci.github.io/workshops-sheffield-2013-09/00-introduction/intro_slides/index.html) | 5:00 - 5:30 |
+|**rOpenSci demos 2** *Reproducible workflows, sharing and reusing data and analyses* [slides](http://ropensci.github.io/workshops-sheffield-2013-09/00-introduction/intro_slides/index.html) | 4:15 - 5:00 |
+|**Wrap up and discussion** [slides](http://ropensci.github.io/workshops-sheffield-2013-09/00-introduction/intro_slides/index.html) | 5:00 - 5:30 |
 
 ## Feedback
 
