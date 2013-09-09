@@ -1,5 +1,5 @@
 
-```r
+```coffee
 library(rfisheries)
 ```
 
@@ -8,21 +8,21 @@ library(rfisheries)
 ## required package: RJSONIO
 ```
 
-```r
+```coffee
 library(reshape2)
 library(ggplot2)
 ```
 
 
 
-```r
+```coffee
 species <- species_codes(progress = "none")
 tunas <- grep("Tuna", species$english_name)
 ```
 
 
 
-```r
+```coffee
 who <- c("TUX", "COD", "VET", "NPA")
 by_species <- lapply(who, function(x) landings(species = x))
 names(by_species) <- who
@@ -30,7 +30,7 @@ names(by_species) <- who
 
 
 
-```r
+```coffee
 dat <- melt(by_species, id = c("catch", "year"))
 names(dat) <- c("catch", "year", "a3_code")
 ```
@@ -39,7 +39,7 @@ names(dat) <- c("catch", "year", "a3_code")
 Tidy data is easy to plot:
 
 
-```r
+```coffee
 ggplot(dat, aes(year, catch)) + geom_line() + facet_wrap(~a3_code, scales = "free_y")
 ```
 
@@ -50,7 +50,7 @@ ggplot(dat, aes(year, catch)) + geom_line() + facet_wrap(~a3_code, scales = "fre
 
 
 
-```r
+```coffee
 library(data.table)
 ```
 
@@ -58,7 +58,7 @@ library(data.table)
 ## data.table 1.8.8 For help type: help("data.table")
 ```
 
-```r
+```coffee
 species <- data.table(species)
 setkey(species, "a3_code")
 code_names <- species[who, scientific_name]
@@ -66,7 +66,7 @@ code_names <- species[who, scientific_name]
 
 
 
-```r
+```coffee
 code_names[[2]] <- factor(code_names[[2]])
 ```
 
@@ -75,7 +75,7 @@ code_names[[2]] <- factor(code_names[[2]])
 or as a named string,
 
 
-```r
+```coffee
 codes <- code_names$scientific_name
 names(codes) <- code_names$a3_code
 codes
@@ -91,14 +91,14 @@ codes
 Perhaps we want date formats
 
 
-```r
+```coffee
 # dat[[2]] <- as.POSIXlt.character(dat[[2]], format = '%Y')
 ```
 
 
 
 
-```r
+```coffee
 meta <- list(catch = list("catch", "Global Landings of fish", "tonnes"), year = list("year", 
     "the year for which data was reported", "YYYY"), a3_code = list("a3_code", 
     "3 digit country code", codes))
@@ -108,14 +108,14 @@ meta <- list(catch = list("catch", "Global Landings of fish", "tonnes"), year = 
 We must make sure that column classes are correct.  
 
 
-```r
+```coffee
 # dat$year = as.Date(as.character(dat$year), format='%Y')
 dat$a3_code <- as.factor(dat$a3_code)
 ```
 
 
 
-```r
+```coffee
 require(reml)
 ```
 
@@ -123,7 +123,7 @@ require(reml)
 ## Loading required package: reml
 ```
 
-```r
+```coffee
 description <- "Landings data for several species by year, from the OpenFisheries database"
 eml_write(dat = dat, meta, title = "Landings Data", description = description, 
     creator = "Karthik Ram <karthik@ropensci.org>", file = "landings.xml")
@@ -146,7 +146,7 @@ eml_write(dat = dat, meta, title = "Landings Data", description = description,
 ## Publish to rfigshare
 
 
-```r
+```coffee
 eml_publish("landings.xml", description = description, categories = "Ecology", 
     tags = "fisheries", destination = "figshare", visibility = "public")
 ```
@@ -175,7 +175,7 @@ eml_publish("landings.xml", description = description, categories = "Ecology",
 ## Adding Location context with GBIF
 
 
-```r
+```coffee
 library(rgbif)
 omany <- failwith(NULL, occurrencelist_many)
 locations <- llply(as.list(code_names$scientific_name), omany, .progress = "none")
@@ -195,7 +195,7 @@ a <- join(dat, loc, by = "a3_code")
 Richer GBIF record ...
 
 
-```r
+```coffee
 omany <- failwith(NULL, occurrencelist)
 locations <- llply(as.list(code_names$scientific_name), omany, format = "darwin", 
     .progress = "none")
