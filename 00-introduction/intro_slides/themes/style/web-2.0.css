@@ -5,6 +5,9 @@
   background: url('groovepaper.png') repeat;
 }
 
+#summary {
+  line-height: 2em;
+}
 
 #intro {
     text-align: center;
