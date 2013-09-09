@@ -17,10 +17,10 @@ You'll be able to copy-paste all of the code provided here directly into RStudio
 |Topic|Time|
 |---------------|-------|
 |**Introduction to rOpenSci** [slides](http://ropensci.github.io/workshops-sheffield-2013-09/00-introduction/intro_slides/index.html) | 2:30 - 3 |
-|**rOpenSci demos 1** *Biodiversity records, taxonomic name resolution, climate mapping* [slides](http://ropensci.github.io/workshops-sheffield-2013-09/00-introduction/intro_slides/index.html) | 3:00 - 4:00 |
+|**rOpenSci demos 1** *Biodiversity records, taxonomic name resolution, climate mapping*  | 3:00 - 4:00 |
 |**Break**| 4:00 - 4:15 |
-|**rOpenSci demos 2** *Reproducible workflows, sharing and reusing data and analyses* [slides](http://ropensci.github.io/workshops-sheffield-2013-09/00-introduction/intro_slides/index.html) | 4:15 - 5:00 |
-|**Wrap up and discussion** [slides](http://ropensci.github.io/workshops-sheffield-2013-09/00-introduction/intro_slides/index.html) | 5:00 - 5:30 |
+|**rOpenSci demos 2** *Reproducible workflows, sharing and reusing data and analyses*  | 4:15 - 5:00 |
+|**Wrap up and discussion**  | 5:00 - 5:30 |
 
 ## Feedback
 
