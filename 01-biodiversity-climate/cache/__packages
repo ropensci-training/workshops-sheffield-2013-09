@@ -10,6 +10,8 @@ knitr
 maps
 plyr
 reshape2
+rgbif
 rnoaa
 rvertnet
 scales
+taxize
