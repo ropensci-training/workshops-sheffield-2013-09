@@ -19,8 +19,8 @@ urls <- seaiceeurls(mo='Apr', pole='N')[1:12]
 ### Download sea ice data
 
 ```{r getdata, warning=FALSE, comment=NA, message=FALSE, cache=TRUE}
-# registerDoMC(cores = 4)
-out <- llply(urls, noaa_seaice, storepath="~/", .parallel = FALSE)
+# registerDoMC(cores = 2)
+out <- llply(urls, noaa_seaice, storepath="~/", .parallel = TRUE)
 names(out) <- seq(1979, 1990, 1)
 df <- ldply(out)
 ```

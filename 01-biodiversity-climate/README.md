@@ -2,7 +2,13 @@
 # Biodiversity suite at rOpenSci
 
 1. Gbif, Bison, Vertnet, taxize
+    * rGBIF
+    * Taxize
+    * Vernet
 2. rWBClimate, rNOAA
+    * NOAA precipitation data as sparklines
+    * NOAA sea ice data
+    * Climate predictions for Europe
 
 Acquiring various types of data from web repositories:
 
